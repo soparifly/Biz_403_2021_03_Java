@@ -41,7 +41,17 @@
 
 ##git local 저장소 설정
 * git init 
-* git config --local user.name. soparifly
-* git config --local soparifly@naver.com
+* git config --local user.name soparifly
+* git config --local user.email soparifly@naver.com
 * git add .
-* git push http://주소 master
+* git commit -m "처음"
+* git push https://github.com/soparifly/Biz_403_2021_03_Java.git master
+
+##원격 저장소와 연결된 프로젝트에 새로운 코드 추가하기 :unamused:
+* git add .
+* git commit -m "Hello_02 추가"
+* git push https://github.com/soparifly/Biz_403_2021_03_Java.git master
+
+## 원격 저장소 주소를 단축하여 입력하기
+1. 원격 저장소 주소를 별명으로 설정하기
+* git remote add orgin https://github.com/soparifly/Biz_403_2021_03_Java.git
