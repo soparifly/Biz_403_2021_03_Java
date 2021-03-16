@@ -8,4 +8,4 @@ public class Nums {
 	System.out.print(" 을 더하면 ");
 	System.out.println(3 + 5);
 	}
-	}
+}
