@@ -54,4 +54,6 @@
 
 ## 원격 저장소 주소를 단축하여 입력하기
 1. 원격 저장소 주소를 별명으로 설정하기
-* git remote add orgin https://github.com/soparifly/Biz_403_2021_03_Java.git
+* git remote add origin https://github.com/soparifly/Biz_403_2021_03_Java.git
+*git push -u origin master
+*git push :kissing:
