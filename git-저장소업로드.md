@@ -57,3 +57,8 @@
 * git remote add origin https://github.com/soparifly/Biz_403_2021_03_Java.git
 *git push -u origin master
 *git push :kissing:
+
+* GIT REMOTE 이름 수정하는법 
+1. git remote remove '단축어'
+2. 다시 위의 단축어 설정으로 입력함
+3. 변경후 -u 명령어를 한번더 입력해야함
