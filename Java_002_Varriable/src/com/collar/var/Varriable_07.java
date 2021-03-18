@@ -16,7 +16,7 @@ public class Varriable_07 {
 		intSum += ++intNum; //10+5
 		intSum += ++intNum; //15+6
 		intSum += ++intNum; //21+7
-		intSum += ++intNum;
+		intSum += ++intNum; //28+8
 		
 	 System.out.println(intSum);
 		
