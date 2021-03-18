@@ -35,13 +35,21 @@ public class Varriable_10 {
 	// intSum에 저장하라
 	//intSum = 0 + 1
 	
+	
+	
+	
+	
 	intSum += (++intNum1) ; // 1
 
 	//intNum을 1증가 == 2 
 	//intNum1에 저장된 2를 
 	//intSum에 저장하라
+	
 	//intSum = intSum + intNum1;
 	//intSum =     1  +   2
+	
+	
+	
 	intSum += ++intNum1; //intSum==3
 
 	intNum = 0;
