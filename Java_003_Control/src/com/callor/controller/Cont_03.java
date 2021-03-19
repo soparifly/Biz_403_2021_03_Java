@@ -17,7 +17,7 @@ public class Cont_03 {
 		}
 		System.out.println("=============================");
 		for (int i = 0; i < 10; i++) {
-			int sum = i + 1;
+			int intSum = i + 1;
 			System.out.println("대한민국1");
 
 		}
