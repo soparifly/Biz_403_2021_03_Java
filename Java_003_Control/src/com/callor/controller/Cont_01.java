@@ -17,3 +17,5 @@ public class Cont_01 {
 }
 
 //ctrl + shift + F < 줄정렬
+//project만들때 아래 체크박스는 해제 //만들당시에 src아래 모르는 파일은 삭제가 가능하다
+//클래스명의 첫글자는 대문자
