@@ -30,14 +30,14 @@ public class Varriable_01 {
 		bYes = 3 == 3;// true
 
 		bYes = false;
-		
+
 		// 어떤 조건이 true일때만 코드를 실행하고자할때
-		//bYes에 담긴값이 true 이냐 ?
-		
-		if( bYes ) {
-			//bYes에 담긴 값이 true일때 실행할 코드들
+		// bYes에 담긴값이 true 이냐 ?
+
+		if (bYes) {
+			// bYes에 담긴 값이 true일때 실행할 코드들
 			System.out.println("byes 는 true");
-		}			
+		}
 	}
 
 }
