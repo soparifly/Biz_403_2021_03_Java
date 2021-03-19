@@ -26,14 +26,21 @@ public class Cont_02 {
 		for (int index = 0; index < 10; index++) {
 			System.out.println(index);
 		}
-		for (int i = 0; i < 10; i++)
+		for (int i = 0; i < 10; i++) {
 			System.out.println(i);
-
+		}
 		// 컴퓨터에서는 0부터 출력한다
 		// 결과값은 9가 나오지만 10으로 만들고싶다면 결과값에 + 1 을 해주어도된다
 
 		/*
 		 * 반복 비교하기 위하여 사용하는 변수를 i 로 선언 및 초기화하고 조건문을 설정하는 일반적인 반복(구)문
+		 * 
+		 * for ()명령문에서는 []의 코드가 실제로 몇번 반복 실행되는가? 라는것이 중요하다 
+		 *  10을 완성시키기위한 방법 반복문내에서 조건이 완성될때까지 실행되고 출력값에 연산을 한다.
+		 *  
 		 */
+		for (int i = 0; i < 10; i++) {
+			System.out.println(i + 1);
+		}
 	}
 }
