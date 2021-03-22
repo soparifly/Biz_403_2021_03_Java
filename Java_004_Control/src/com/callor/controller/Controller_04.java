@@ -1,6 +1,6 @@
 package com.callor.controller;
 
-public class Controller {
+public class Controller_04 {
 	public static void main(String[] args) {
 
 		/*
