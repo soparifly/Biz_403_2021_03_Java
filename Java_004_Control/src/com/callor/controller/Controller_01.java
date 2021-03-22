@@ -8,7 +8,7 @@ public class Controller_01 {
 	int intSum4 = 0;
 	int intSum5 = 0;
 
-	for (int index = 0;index<100;index++) 	{
+	for (int index = 0; index<100 ;index++) 	{
 		int num = index + 1;
 
 		// num값이 3의 배수이면

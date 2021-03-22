@@ -21,6 +21,6 @@ public class Controller_12 {
 
 		}
 		System.out.println("============================");
-		System.out.println("합계 : " + intSum);
+		System.out.printf("합계 : %d", intSum);
 	}
 }

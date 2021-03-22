@@ -10,19 +10,22 @@ public class Controller_08 {
 		for (int i = 0; i < 5; i++) {
 			// 정수형 난수 (임의의정수_) 를 만들어서
 			// num변수에 저장하고
-			// 그값을 출력하라
 			int num = rnd.nextInt();
+
+			// 그값을 출력하라
 			System.out.println(num);
 
 		}
 		System.out.println("+==============================");
 		for (int i = 0; i < 5; i++) {
-			int num = rnd.nextInt(100);
+		
 			// 0 ~ 99까지의 정수를 만들어라
 			// 0 ~ (100-1)
 			// 0 ~ (<100)
+			int num = rnd.nextInt(100);
 			System.out.println(num);
 		}
+		
 		System.out.println("+==============================");
 
 		for (int i = 0; i < 5; i++) {

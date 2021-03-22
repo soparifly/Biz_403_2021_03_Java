@@ -31,21 +31,28 @@ public class Controller_10 {
 		} else {
 			System.out.println(num3 + "는 짝수아님");
 		}
+		if (num4 % 2 == 0) {
+			System.out.println(num4 + "는 짝수");
+		} else {
+			System.out.println(num4 + "는 짝수아님");
+		}
+		if (num5 % 2 == 0) {
+			System.out.println(num5 + "는 짝수");
+		} else {
+			System.out.println(num5 + "는 짝수아님");
+		}
 		System.out.println("=============================");
-		
-		
-		//반복문을 사용하여 임의 정수 5개를 만들고 그수가 짝수인지 아닌지를 판별하는 코드
+
+		// 반복문을 사용하여 임의 정수 5개를 만들고 그수가 짝수인지 아닌지를 판별하는 코드
 		for (int i = 0; i < 5; i++) {
-			
 			int num = rnd.nextInt(100);
-			
+
 			if (num % 2 == 0) {
 				System.out.println(num + "는짝수");
 			} else {
 				System.out.println(num + "는 짝수 아님");
 
 			}
-
 		}
 	}
 
