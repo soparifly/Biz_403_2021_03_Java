@@ -11,6 +11,7 @@ public class App_03A {
 		 */
 		Random rnd = new Random();
 		int[] intScores = new int[10];
+		
 		for (int i = 0; i < 10; i++) {
 			intScores[i] = rnd.nextInt(51) + 50;
 		}
