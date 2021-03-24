@@ -5,6 +5,10 @@ import java.util.Random;
 
 public class App_11 {
 	public static void main(String[] args) {
+		
+		//main() method의 맴버변수
+		//method 변수
+		
 		// 정수배열 45개 선언함
 		int[] intNums = new int[45];
 		// 1~ 45까지 배열에 저장함

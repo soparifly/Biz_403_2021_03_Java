@@ -3,7 +3,13 @@ package com.callor.apps.service;
 import java.util.Random;
 
 public class ScoreServiceV2 {
-
+	//클래스 영역에 선언된 변수
+	//누군가 이 클래스를 사용하여 인스턴스를 생성하면 
+	//자동으로 예약이 되는 변수들
+	//인스턴스 (영역) 변수
+	//클래스의 맴버 변수
+	//클래스 영역에 선언된 변수는
+	//클래스에 포함된 method에서 변수를 사용(읽기/쓰기) 를 할수있다
 	Random rnd;
 	
 	int[] intKor;
