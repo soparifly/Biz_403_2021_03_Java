@@ -35,10 +35,10 @@ public class App_10 {
 //			 * 4	5
 //			 * 5	6
 //			 * :	:
-//			 * 
+//			 * 배열의 오름차순에 따른 정렬코드
 //			 */
 		for (int i = 0; i < intNums.length; i++) {
-			for (int j = i + 1; i < intNums.length; j++) {
+			for (int j = i + 1; j < intNums.length; j++) {
 				if (intNums[i] > intNums[j]) {
 
 					int temp = intNums[i];
