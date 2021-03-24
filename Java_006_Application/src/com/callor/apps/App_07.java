@@ -54,16 +54,19 @@ public static void main(String[] args) {
  * intNums[1]에 저장된 값을 교환
  * 
  */
-
+		int t = intNums[0];
+		intNums[0]= intNums[1];
+		intNums[1] = t;
+//두 변수의 값을 서로 바꾸려면
 		int num1 = 30;
 		int num2 = 40;
 		System.out.println(num1);
 		System.out.println(num2);
 		int temp =num1;
 		num1 = num2;
+		//제 3의 임시 저장소 변수가 필요하다
 		num2 = temp;
 		System.out.println(num1);
 		System.out.println(num2);
 }
-			
 }
