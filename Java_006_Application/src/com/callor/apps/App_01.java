@@ -1,4 +1,4 @@
-package com.callor.app;
+package com.callor.apps;
 
 /*
  * {}내에  있는 코드는 최소화하자
