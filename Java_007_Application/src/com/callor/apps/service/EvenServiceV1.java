@@ -36,12 +36,19 @@ public class EvenServiceV1 {
 	 * 짝수 Even 홀스 Odd 
 	 */
 	public void printEven() {
+		int nCount =0;
+		System.out.println("=====================================");
+		System.out.println("짝수들의 리스트");
+		System.out.println("---------------------------------");
 		//배열전체를 뒤져서 짝수가 있으면 찾아서 출력하라
 		for (int i = 0; i <intNums.length; i++){
 			 if(intNums[i] % 2 ==0) {
 				 System.out.println(intNums[i]);
+				 nCount++;
 			 }
 		}
+		System.out.println("짝수들의 개수:"+ nCount);
+		System.out.println("============================");
 	}
 	public void sumEven() {
 		int intSum = 0;
