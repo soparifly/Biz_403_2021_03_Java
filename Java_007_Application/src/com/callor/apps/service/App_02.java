@@ -1,4 +1,4 @@
-package com.callor.apps.apps;
+package com.callor.apps.service;
 
 
 import com.callor.apps.service.PrimeServiceV1;
