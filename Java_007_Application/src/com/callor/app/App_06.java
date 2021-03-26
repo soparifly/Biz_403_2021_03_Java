@@ -1,4 +1,4 @@
-package com.callor.apps.service;
+package com.callor.app;
 
 public class App_06 {
 //

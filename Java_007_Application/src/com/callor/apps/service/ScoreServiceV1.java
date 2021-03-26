@@ -14,17 +14,16 @@ public class ScoreServiceV1 {
 
 	Random rnd = new Random();
 
-	int intSu = 10;
 	int nCount = 0;
 
-	int[] intKor = new int[intSu];
-	int[] intEng = new int[intSu];
-	int[] intMath = new int[intSu];
+	int[] intKor = new int[10];
+	int[] intEng = new int[intKor.length];
+	int[] intMath = new int[intKor.length];
 
-	int[] intSum = new int[intSu];
-	float[] floatAvg = new float[intSu];
+	int[] intSum = new int[intKor.length];
+	float[] floatAvg = new float[intKor.length];
 
-	public void intScore() {
+	public void makeScore() {
 		for (int i = 0; i < 10; i++) {
 			intKor[i] = rnd.nextInt(100) + 1;
 			intEng[i] = rnd.nextInt(100) + 1;
@@ -32,13 +31,12 @@ public class ScoreServiceV1 {
 		}
 	}
 
-	public void intSum() {
+	public void makeSum() {
 		for (int i = 0; i < 10; i++) {
 			intSum[i] = intKor[i];
 			intSum[i] += intEng[i];
 			intSum[i] += intMath[i];
 			floatAvg[i] = (float) intSum[i] / 3;
-			System.out.print("합계 : " + intSum);
 		}
 	}
 

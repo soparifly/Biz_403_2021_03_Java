@@ -1,4 +1,6 @@
-package com.callor.apps.service;
+package com.callor.app;
+
+import com.callor.apps.service.PrimeServiceV2;
 
 public class App_04 {
 	

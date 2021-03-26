@@ -1,4 +1,6 @@
-package com.callor.apps.service;
+package com.callor.app;
+
+import com.callor.apps.service.EvenServiceV1;
 
 public class App_05 {
 	public static void main(String[] args) {

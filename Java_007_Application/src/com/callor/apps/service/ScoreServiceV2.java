@@ -17,11 +17,11 @@ public class ScoreServiceV2 extends ScoreServiceV1 {
 // 매개 변수, parameter(파라미터)라고 한다.
 	public ScoreServiceV2(int members) {
 		int[] intKor = new int[members];
-		int[] intEng = new int[intSu];
-		int[] intMath = new int[intSu];
+		int[] intEng = new int[intKor.length];
+		int[] intMath = new int[intKor.length];
 
-		int[] intSum = new int[intSu];
-		float[] floatAvg = new float[intSu];
+		int[] intSum = new int[intKor.length];
+		float[] floatAvg = new float[intKor.length];
 
 	}
 
