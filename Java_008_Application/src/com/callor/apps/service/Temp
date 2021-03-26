@@ -1,0 +1,32 @@
+
+//
+//	public void intKors() {
+//		for (int i =0; i < nums.length ; i++) {
+//		
+//		System.out.println(LinesService.dLines(30));
+//		System.out.printf("%d번학생의 점수를 입력하세요\n",++nCount);
+//		System.out.print("국어 : >>");
+//		int kors = score1.nextInt();
+//		System.out.println(LinesService.dLines(30));
+//		}
+//	}
+//	public void intEngs() {
+//		for (int i= 0; i < nums.length; i++) {
+//			
+//			System.out.println(LinesService.dLines(30));
+//			System.out.println("점수를 입력하세요");
+//			int engs = score2.nextInt();
+//			System.out.println(LinesService.dLines(30));			
+//		}
+//	}
+//		public void intMath() {
+//			for (int i = 0; i < nums.length; i++) {
+//				
+//			System.out.println(LinesService.dLines(30));
+//			System.out.println("점수를 입력하세요");
+//			int maths = score3.nextInt();
+//			System.out.println(LinesService.dLines(30));
+//		}
+//	}
+//		
+//}
