@@ -15,8 +15,8 @@ public class Controller_14 {
 		intMath = rnd.nextInt(100) + 1;
 
 		int intSum = intKor;
-		intKor += intEng;
-		intEng += intMath;
+		intSum += intEng;
+		intSum += intMath;
 		float floatAvg = (float)intSum / 3;
 
 		System.out.println("===============================");

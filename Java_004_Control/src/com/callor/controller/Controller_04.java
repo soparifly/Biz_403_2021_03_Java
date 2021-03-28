@@ -26,6 +26,8 @@ public class Controller_04 {
 
 			}
 		}
-
+System.out.println(intSum3);
+System.out.println(intSum4);
+System.out.println(intSum5);
 	}
 }
