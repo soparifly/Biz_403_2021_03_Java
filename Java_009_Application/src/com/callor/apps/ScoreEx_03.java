@@ -25,5 +25,9 @@ public class ScoreEx_03 {
 		System.out.println("홍길동 총점 : " + total);
 		System.out.println("홍길동 평균	 : " + 홍길동.getAvg());
 
+		
+//		*.get~() 캡슐화, 코드의 내부는 볼수없지만 어떠한 기능을 할것이라고 유추할수있다.
+//		ex ) Scanner 클래스의 기능을 유추할수있음
+		System.out.println(홍길동.getClass());
 	}
 }
