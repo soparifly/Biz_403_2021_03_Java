@@ -1,4 +1,6 @@
-package com.callor.apps.service;
+package com.callor.apps;
+
+import com.callor.apps.service.ScoreServiceV3;
 
 public class App_03 {
 

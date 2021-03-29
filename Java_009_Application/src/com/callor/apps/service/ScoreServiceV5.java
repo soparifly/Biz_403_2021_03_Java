@@ -4,6 +4,16 @@ import java.util.Scanner;
 
 public class ScoreServiceV5 {
 	String[] subject;
+	
+	/*
+	 * 3과목의 점수를 저장할 배열을 10개 만들었다고 가정
+	 * []- > 첨자
+	 * intKor[8] = 90;
+	 * intEng[8] = 70;
+	 * intMath[8]= 66;
+	 * 8번 요소의 배열에 각각 점수를 저장
+	 * 
+	 */
 	int[] intKor;
 	int[] intEng;
 	int[] intMath;
@@ -70,6 +80,14 @@ public class ScoreServiceV5 {
 		return score; // 오류를 막기위해서 메서드를 생성수 바로 return값을 입력해준다 //while 입력시는 의미가 없다
 	}
 	
+	/*
+	 * 프로젝트를 만들고 컴파일을 수행하고 실행을 했을때
+	 * 
+	 * 우리가 선언한 클래스는 코드만 존재하는 상태가 된다
+	 * 이클래스를 객체로 선언하고 , 생성한 후에 여러가지 method를 호출하여 업무를 수행할수 있다
+	 * method나 변수에 static을 부착하면
+	 * 사용하지 않아도 method코드나, 변수가 메모리에 상주하게된다.
+	 */
 	public static String dLine() {
 		return"=============================================================";
 	}
