@@ -18,9 +18,11 @@ public class Class_02 {
 		 *  int배열에서는 첨자의 값을 정해주어야하지만
 		 *  List클래스를 사용하여 intList를 선언하면 첨자의 값을 정해주지않아도된다
 		 *  단. intList에는 Integer형 데이터만 저장할수 있다.
+		 *  
 		 *  <Integer> : generic 선언 제네릭선언
 		 *  저장될 데이터의 type을 규정하는 방법
 		 *  primitive형은 포함할수 없다.
+		 *  
 		 *  반드시 wrapper class형만 포함할수있다
 		 *  List 형 객체 : List클래스를 사용한 객체
 		 *  	선언할때는 List를 사용하고 
