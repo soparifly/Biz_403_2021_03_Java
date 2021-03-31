@@ -68,8 +68,6 @@ public class IolistServiceV1 {
 			continue;
 			}
 			if (intMenu == 1) {
-				break;
-			} else if (intMenu == 1) {
 				this.input();
 			} else if (intMenu == 2) {
 				this.printAllList();
