@@ -50,16 +50,29 @@ public class IolistServiceV1 {
 			System.out.println("-".repeat(50));
 			System.out.println("1.매입매출 등록 ");
 			System.out.println("2.매입 매출 리스트 등록");
-			System.out.println("0.업무 종료");
+			System.out.println("QUIT.업무 종료");
 			System.out.println("=".repeat(50));
 			System.out.print("업무 선택 >>");
-			int intMenu = scan.nextInt();
-			if (intMenu == 0) {
+			
+			String strMenu = scan.nextLine();
+			if (strMenu.equals("QUIT")) {
+				break;
+			}
+			Integer intMenu = null;
+			try {
+				intMenu = Integer.valueOf(strMenu);
+				
+			} catch (Exception e) {
+				System.out.println("메뉴선택 오류!!");// TODO: handle exception
+				System.out.println("메뉴는 1~2,QUIT만 입력가능");
+			continue;
+			}
+			if (intMenu == 1) {
 				break;
 			} else if (intMenu == 1) {
 				this.input();
 			} else if (intMenu == 2) {
-				System.out.println();
+				this.printAllList();
 				// TODO 보완하기
 			}
 		} // end while
