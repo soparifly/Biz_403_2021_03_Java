@@ -16,6 +16,7 @@ public class App_01 {
 //		//num1 이 소수가 아닌것을 계속해서 반복해서 출력된다
 //	}
 // 11이 소수인것을 판별하라
+		
 		boolean notPrime = false; // 플래그 flag변수
 		for (int index = 2; index < num2; index++) {
 			// num 2 가 소수가 아닌것이 발견되면

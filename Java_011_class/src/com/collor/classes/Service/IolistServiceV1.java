@@ -107,6 +107,7 @@ public class IolistServiceV1 {
 		iolistVO.setIprice(iprice);
 		iolistVO.setOprice(oprice);
 		iolistVO.setQty(qty);
+		
 		// iolistVO에 저장한 데이터를 확인하기
 		this.printIolist(iolistVO);
 		// 입력된 매입매출 데이터를 데이터리스트에 담기
