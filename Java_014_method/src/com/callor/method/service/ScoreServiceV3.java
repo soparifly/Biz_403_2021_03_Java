@@ -1,8 +1,6 @@
-package com.callor.method;
+package com.callor.method.service;
 
 import java.util.Scanner;
-
-import com.callor.method.service.InputServiceV2;
 
 public class ScoreServiceV3 {
 	/*
