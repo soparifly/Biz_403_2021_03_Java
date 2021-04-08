@@ -1,4 +1,6 @@
-package com.callor.method.service;
+package com.callor.method;
+
+import com.callor.method.service.NumberServiceV1A;
 
 public class Method_03 {
 

@@ -1,4 +1,4 @@
-package com.callor.method.service;
+package com.callor.method;
 
 public class Number_01 {
 

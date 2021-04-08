@@ -25,6 +25,34 @@ public class ScoreServiceV5 {
 		student = 5;
 	}
 
+	public void inputScore() {
+		for(int st = 0; st < 5 ; st++) {
+			Integer[] scores = new Integer[subject.length];
+			for(int sb = 0; sb <subject.length; sb++) {
+				scores[sb] = isV2.inputValue(subject[sb], 0, 100);
+			}
+			korList.add(scores[0]);
+			engList.add(scores[1]);
+			mathList.add(scores[2]);
+		}
+	}
+	public void inputScore2() {
+		
+		
+		for (int i =0 ; i <5 ; i++) {
+			Integer score = isV2.inputValue(subject[i], 0, 100);
+			if(score == null) {
+				return;
+			}else if(subject[i].equals("국어")){
+				korList.add(score);
+			}else if(subject[i].equals("영어")) {
+				engList.add(score);
+			}else if(subject[i].equals("수학")) {
+				
+			}
+		}
+	}
+	
 //	public void inputScore() {
 //		Integer korScore;
 //		Integer engScore;
@@ -121,22 +149,21 @@ public class ScoreServiceV5 {
 	public void printScore() {
 
 		System.out.println("=".repeat(50));
-		System.out.println("국어\t영어\t수학\t총점\t평균"); 
-		
+		System.out.println("국어\t영어\t수학\t총점\t평균");
+
 		System.out.println("=".repeat(50));
-		for(int index = 0 ; index <korList.size(); index++) {
-			System.out.print(korList.get(index)+"\t");
-			System.out.print(engList.get(index)+"\t");
-			System.out.print(mathList.get(index)+"\n");
-			
+		for (int index = 0; index < korList.size(); index++) {
+			System.out.print(korList.get(index) + "\t");
+			System.out.print(engList.get(index) + "\t");
+			System.out.print(mathList.get(index) + "\n");
+
 		}
-			System.out.println("=".repeat(50));
+		System.out.println("=".repeat(50));
 	}
 
 }
 /*
  * Array리스트를 사용하는 방법
  * 
- * 객체.add(추가할변수) //내용추가
- * 객체.get() //내용호출
+ * 객체.add(추가할변수) //내용추가 객체.get() //내용호출
  */

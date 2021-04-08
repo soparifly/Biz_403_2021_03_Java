@@ -39,33 +39,26 @@ public class NumberServiceV5 {
 //	}
 //	
 
-public Integer IntputNum(String title) {
-	Scanner scan = new Scanner(System.in);
-	
-	String strNum = "";
-	Integer intNum = 0;
-	System.out.println(" 0~ 100 정수 또는 QUIT 만 입력하세요");
-	strNum = scan.nextLine();
-	if (strNum.equals("QUIT")) {
-		break;
-	} else { 
-		
-		
-	}
-			
-	
-	return null;
-	
-}
-	
+	public Integer IntputNum(String title) {
+		Scanner scan = new Scanner(System.in);
 
-		
-}
-		
+		String strNum = "";
+		Integer intNum = 0;
+		System.out.println(" 0~ 100 정수 또는 QUIT 만 입력하세요");
+		try {
+			strNum = scan.nextLine();
+			intNum = Integer.valueOf(strNum);
+		} catch (Exception e) {
+//			e.printStackTrace();
+			System.out.println("숫자만 입력하세요!!");
+		}
 	
-	
-	
-	
-	
-	
+		if (strNum.equals("QUIT")) {
+			
+			return null;
+		}
+		return intNum;
+
+	}
+
 }

@@ -76,10 +76,10 @@ public class ScoreVO {
 //	toString() method는 Object 클래스로부터 상속받은
 //	모든 클래스로 만든 객체에서 호출할수 있다.
 //	VO클래스에서는 VO의 변수들에 담긴 값을 확인하는 용도로 재정의 하여 활용한다
-	public String toString() {
-		return "ScoreVO [num=" + num + ", name=" + name + ", kor=" + kor + ", eng=" + eng + ", math=" + math + "]";
-	
-	}
+//	public String toString() {
+//		return "ScoreVO [num=" + num + ", name=" + name + ", kor=" + kor + ", eng=" + eng + ", math=" + math + "]";
+//	
+//	}
 //	제너레이터 투스트링 
 	
 }
