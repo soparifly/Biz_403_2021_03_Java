@@ -1,4 +1,6 @@
-package com.callor.method.service;
+package com.callor.method;
+
+import com.callor.method.service.InputNumberV1;
 
 public class NumberEx_02 {
 
