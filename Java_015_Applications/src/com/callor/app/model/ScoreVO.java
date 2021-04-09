@@ -70,6 +70,10 @@ public class ScoreVO {
 		float avg = (float)sum /3;
 		return avg;
 	}
+	public void setNum() {
+		// TODO Auto-generated method stub
+		
+	}
 
 //	@Override //재정의 상속받을 클래스에있는 method를 내맘대로 다시만들어쓰기
 //	재활용
