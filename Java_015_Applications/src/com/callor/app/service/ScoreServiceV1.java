@@ -5,7 +5,7 @@ import java.util.Scanner;
 import com.kimbyulook.standard.InputService;
 import com.kimbyulook.standard.impl.InputServiceImplV1;
 
-public class ScoreServiceV1 {
+public class ScoreServiceV1{
 	// TODO InputService interface를 활용 하여 한 학생의 국어, 영어, 수학점수를 입력받고
 	// 총점과 평균을 계산하여 출력
 	// 단 , 점수는 0~ 100점까지만 입력할수 있음

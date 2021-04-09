@@ -1,8 +1,10 @@
 package com.callor.app;
 
+import com.callor.app.service.ScoreServiceImplV1;
+
 public class Ex_02 {
 	public static void main(String[] args) {
-		ScoreServiceV1 ssV1 = new ScoreServiceV1();
+		ScoreServiceImplV1 ssV1 = new ScoreServiceImplV1();
 		while (true) {
 			try {
 				ssV1.selectMenu();
