@@ -7,8 +7,8 @@ import java.io.PrintWriter;
 public class FileWriter_02 {
 
 	public static void main(String[] args) {
-//		String fileName ="src/com/callor/app/9981.txt"
-		FileWriter filWriter = null;
+		String fileName ="src/com/callor/app/9981.txt";
+		FileWriter fileWriter = null;
 		PrintWriter out = null;
 
 		try {
