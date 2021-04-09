@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-import javax.security.auth.Subject;
 
 import com.callor.app.model.ScoreVO;
 import com.callor.app.service.ScoreService;
@@ -25,7 +24,7 @@ public class ScoreServiceImplV01 implements ScoreService {
 	String name;
 
 //	ScoreVO scoreVO;
-	public ScoreServiceV1() {
+	public ScoreServiceImplV01() {
 
 		isV1 = new InputServiceImplV1();
 

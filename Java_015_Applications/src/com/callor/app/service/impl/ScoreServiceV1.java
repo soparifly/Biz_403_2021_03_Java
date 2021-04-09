@@ -1,4 +1,4 @@
-package com.callor.app.service;
+package com.callor.app.service.impl;
 
 import java.util.Scanner;
 
