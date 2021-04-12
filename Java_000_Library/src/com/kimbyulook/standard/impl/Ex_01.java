@@ -1,11 +1,11 @@
-package com.kimbyulook.standard;
+package com.kimbyulook.standard.impl;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Vector;
 
-import com.kimbyulook.standard.impl.InputServiceImplV1;
+import com.kimbyulook.standard.InputService;
 
 public class Ex_01 {
 	public static void main(String[] args) {

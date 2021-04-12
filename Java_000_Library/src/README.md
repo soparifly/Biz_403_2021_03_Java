@@ -13,6 +13,17 @@
 * 문자열 prompt를 보여주고 정수 입력 받기
 * 입력중 QUIT를 누르면 입력 취소 (return null)
 * 범위를 지정하여 입력받는 정수 유효성 검사
+
 ##InputServiceImplV1
 *since 2021.04
 *InputService interface 구현체
+
+##MenuService
+*since 2021.04
+* 사용자에게 charactor 메뉴를 보여주고
+* 업무 번호를 입력 하면 해당하는 업무 번호를 return하고 
+* QUIT를 입력하면 null을 return
+
+## MenuSerivceImplV1
+* since 2021.04
+* MenuService interface 구현체
