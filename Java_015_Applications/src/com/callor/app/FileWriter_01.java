@@ -30,16 +30,17 @@ public static void main(String[] args) {
 	String fileName = "src/com/callor/app/mydata.txt";
 //	2. 무엇을 사용하여,두개의객체를 선언!!
 	
-	FileWriter fileWriter = null;
-	PrintWriter out = null;
+	FileWriter fileWriter = null; //파일라이터 임포트
+	PrintWriter out = null; //임포트된파일라이터를 담는 out변수 초기화
+	
 	
 //	3. 파일에 데이터를 기록하기 위하여 파일을 만들어라
 	//새로운파일을생성하라
 //	만약 이미 있으면 지우고 다시 만들어라
 	try {
 		
-		fileWriter = new FileWriter(fileName);
-		 out = new PrintWriter(fileWriter);
+		fileWriter = new FileWriter(fileName); //파일라이터라나는 파일라이터의 참조변수를 생성하고 매개변수는 파일경로가저장된 변수를 입력한
+		 out = new PrintWriter(fileWriter); //
 		 
 		 out.println("대한민국만세");
 		 out.printf("%d x %d = %d\n",3,4, 3*4);

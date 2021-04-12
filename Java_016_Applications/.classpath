@@ -6,6 +6,6 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/bizworks/javaworks/myJDK/kimbyulooKJDK.jar"/>
+	<classpathentry kind="lib" path="/Users/kimsojeong/Documents/work/javaworks/myJDK/kimbyulookJDK.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

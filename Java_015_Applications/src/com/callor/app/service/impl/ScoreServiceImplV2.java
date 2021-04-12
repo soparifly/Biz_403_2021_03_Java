@@ -7,8 +7,7 @@ public class ScoreServiceImplV2 extends ScoreServiceImplV1 {
 	/*
 	 * 현재 클래스 내부에서만 호출되는 method private으로 선언한다
 	 * 현재 클래스를 상속받아 확장하여 사용할 수 있도록 하려면
-	 * private = > protected로 변경해주는 것이 좋다 (상속받은상황에서만 접근이가능하다)
-	 * 
+	 * private = > protected로 변경해주는 것이 좋다 (상 
 	 */
 	//알트 + 쉬프트 S
 	@Override
@@ -33,14 +32,14 @@ public class ScoreServiceImplV2 extends ScoreServiceImplV1 {
 			 */
 			int index =0;
 			//index는 0~size -1 만큼 반복하는 과정 
-			for(index = 0; index <scoreList.size();index++) {
+			for(index = 0; index < scoreList.size();index++) {
 				ScoreVO vo = scoreList.get(index);
 				if(vo.getNum().equals(strNum)) {
 					break;
 				}
 			}
 			//for() 반복문이 모두 정상종료 되었는지? :index >= size()
-			// 아니면 중간에 중단되고 빠져나왔는지 :index > size()
+			// 아니면 중간에 중단되고 빠져나왔는지 :index < size()
 			//  for 중간에 break를 만났다. break가 실행됬다
 			// 이미 등록된 학번이 있다 
 			if(index < scoreList.size()) {
