@@ -1,6 +1,5 @@
 package com.kimbyulook.standard.impl;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
@@ -17,6 +16,9 @@ public class MenuServiceImplV1 implements MenuService {
 	 * title변수와  menuList에 값을 담아서 파라미터로 전달하고 
 	 * 생성자를 호출해야한다.
 	 * 
+	 *  new MenuSerivceIMplV1()형식으로 작성이 안된다
+	 *  반드시 String , List형 두개의 값을 입력해주어야한다
+	 *  new MenuServiceImplV1 (title,menuList)형식이어야한다
 	 */
 	
 	
