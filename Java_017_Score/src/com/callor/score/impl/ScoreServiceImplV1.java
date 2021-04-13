@@ -1,8 +1,9 @@
-package com.callor.score;
+package com.callor.score.impl;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+
 import com.callor.score.model.ScoreVO;
 import com.callor.score.service.ScoreService;
 import com.kimbyulook.standard.InputService;
@@ -24,12 +25,12 @@ import com.kimbyulook.standard.impl.MenuServiceImplV1;
  * 5.성적정보 출력
  */
 public class ScoreServiceImplV1 implements ScoreService {
-	InputService inService;
-	MenuService menuService;
-	List<ScoreVO> scoreList;
-	List<String> menuList;
-	List<ScoreVO> nameList;
-	Scanner scan;
+	protected InputService inService;
+	protected MenuService menuService;
+	protected List<ScoreVO> scoreList;
+	protected List<String> menuList;
+	protected List<ScoreVO> nameList;
+	protected Scanner scan;
 
 	public ScoreServiceImplV1() {
 		// TODO Auto-generated constructor stub
@@ -72,7 +73,7 @@ public class ScoreServiceImplV1 implements ScoreService {
 		while (true) {
 			Integer intNum = inService.inputValue("학번", 1);
 			if(intNum == null) {
-				return null;
+				return;
 			}
 			
 		} // while end

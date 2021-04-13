@@ -1,4 +1,4 @@
-package com.callor.score;
+package com.callor.score.impl;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,6 +9,12 @@ import com.kimbyulook.standard.impl.InputServiceImplV1;
 import com.kimbyulook.standard.impl.MenuServiceImplV1;
 
 public class ScoreServiceImplV1Ex extends ScoreServiceImplV1 {
+
+	@Override
+	public void printScore() {
+		// TODO Auto-generated method stub
+		super.printScore();
+	}
 
 	protected MenuService menuService;
 	protected InputService inService;
@@ -30,11 +36,11 @@ public class ScoreServiceImplV1Ex extends ScoreServiceImplV1 {
 	public void selectMenu() {
 		String title = "대한 고등학교 성적처리 시스템 2021";
 		List<String> menuList = new ArrayList<String>();
-		menuList.add("1.학생정보 등록");
-		menuList.add("2.성적 등록");
-		menuList.add("3.성적정보 열기");
-		menuList.add("4.성적정보 저장");
-		menuList.add("1.성적정보 출력");
+		menuList.add("학생정보 등록");
+		menuList.add("성적 등록");
+		menuList.add("성적정보 열기");
+		menuList.add("성적정보 저장");
+		menuList.add("성적정보 출력");
 
 		menuService = new MenuServiceImplV1(title, menuList);
 
@@ -54,8 +60,14 @@ public class ScoreServiceImplV1Ex extends ScoreServiceImplV1 {
 //			만약 menu가 1이면 코드가 실행되고 코드가 종료되면 else 이후의 코드는 무시하고 바로if문이 종료된다
 //			1번 코드에 비하면 약간이나마 효율적인 코드가된다
 			if (menu == 1) {
-			} else if (menu == 2) {
-			} else if (menu == 3) {
+			
+			} else if (menu == 2) { 	this.inputScore();
+			} else if (menu == 3) {		this.readScore();
+			} else if (menu == 4) {
+				this.saveScore();
+				
+			} else if (menu == 5) {
+				this.printScore();
 			}
 		} // while end
 

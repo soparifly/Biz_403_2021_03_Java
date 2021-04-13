@@ -18,7 +18,7 @@ public class ScoreServiceImplV2Ex extends ScoreServiceImplV2 {
 	protected String[] subjectList;
 	protected Integer[] subScoreList;
 	protected Scanner scan;
-	protected List<ScoreVO> socreList;
+	protected List<ScoreVO> scoreList;
 	// 과목명, 과목점수가 담긴 배열에 대한 첨자값을 숫자로 사용하지 않고 명명된 이름으로 사용하기 위하여
 	// 배열의 INDEX값을 상수로 선언해 둔다.
 	protected final int 국어 = 0;
@@ -39,7 +39,10 @@ public class ScoreServiceImplV2Ex extends ScoreServiceImplV2 {
 	@Override
 	public void inputScore() {
 
-		Integer intNum = inService.inputValue("학번", 1);
+			Integer intNum = inService.inputValue("학번", 1);
+			
+			
+			
 		if (intNum == null) {
 			return;
 		}

@@ -11,7 +11,7 @@ import com.kimbyulook.standard.MenuService;
 import com.kimbyulook.standard.impl.InputServiceImplV1;
 import com.kimbyulook.standard.impl.MenuServiceImplV1;
 
-public class ScoreServiceImplV2 implements ScoreService{
+public class ScoreServiceImplV2 implements ScoreService {
 
 	protected MenuService menuService;
 	protected List<ScoreVO> scoreList;
