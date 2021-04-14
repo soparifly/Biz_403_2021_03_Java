@@ -69,7 +69,6 @@ public class ScoreServiceV2 implements ScoreService {
 		System.out.print(" >> ");
 		Integer num = scan.nextInt();
 
-		String name = scan.nextLine();
 
 	}
 

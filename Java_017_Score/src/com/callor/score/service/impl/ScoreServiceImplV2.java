@@ -1,4 +1,4 @@
-package com.callor.score.impl;
+package com.callor.score.service.impl;
 
 import java.util.List;
 

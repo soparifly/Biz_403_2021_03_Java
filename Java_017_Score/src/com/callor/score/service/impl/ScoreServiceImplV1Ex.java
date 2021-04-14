@@ -1,4 +1,4 @@
-package com.callor.score.impl;
+package com.callor.score.service.impl;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -60,12 +60,13 @@ public class ScoreServiceImplV1Ex extends ScoreServiceImplV1 {
 //			만약 menu가 1이면 코드가 실행되고 코드가 종료되면 else 이후의 코드는 무시하고 바로if문이 종료된다
 //			1번 코드에 비하면 약간이나마 효율적인 코드가된다
 			if (menu == 1) {
-			
-			} else if (menu == 2) { 	this.inputScore();
-			} else if (menu == 3) {		this.readScore();
+				//menu가 1일때
+			} else if (menu == 2) {
+				this.inputScore();
+			} else if (menu == 3) {
+				this.readScore();
 			} else if (menu == 4) {
 				this.saveScore();
-				
 			} else if (menu == 5) {
 				this.printScore();
 			}

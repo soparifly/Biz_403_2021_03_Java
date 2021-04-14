@@ -5,8 +5,8 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Vector;
 
-import com.callor.score.impl.ScoreServiceImplV1Ex;
 import com.callor.score.service.ScoreService;
+import com.callor.score.service.impl.ScoreServiceImplV1Ex;
 
 public class Const_02 {
 	/*

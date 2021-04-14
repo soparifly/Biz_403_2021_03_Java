@@ -1,4 +1,4 @@
-package com.callor.score.impl;
+package com.callor.score.service.impl;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -7,7 +7,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-import com.callor.app.service.Values;
 import com.callor.score.model.ScoreVO;
 
 public class ScoreServiceImplV2Ex extends ScoreServiceImplV1Ex {
@@ -36,7 +35,7 @@ public class ScoreServiceImplV2Ex extends ScoreServiceImplV1Ex {
 		 */
 		Integer intNum = inService.inputValue("학번", 1);
 		String strNum = String.format("%03d", intNum);
-		
+
 		String strName = null;
 		while (true) {
 
@@ -61,13 +60,13 @@ public class ScoreServiceImplV2Ex extends ScoreServiceImplV1Ex {
 
 		}
 		ScoreVO scoreVO = new ScoreVO();
-		
+
 		scoreVO.setNum(strNum);
 		scoreVO.setName(strName);
 
-		scoreVO.setKor(subScoreList[Values.국어]);
-		scoreVO.setEng(subScoreList[Values.영어]);
-		scoreVO.setMath(subScoreList[Values.수학]);
+		scoreVO.setKor(subScoreList[국어]);
+		scoreVO.setEng(subScoreList[영어]);
+		scoreVO.setMath(subScoreList[수학]);
 
 		System.out.println("=".repeat(50));
 		System.out.println(scoreVO.toString());
@@ -83,7 +82,7 @@ public class ScoreServiceImplV2Ex extends ScoreServiceImplV1Ex {
 		System.out.println("학번\t이름\t국어\t영어\t수학\t총점\t평균\n");
 		System.out.println("-".repeat(80));
 		int nSize = scoreList.size();
-		for(int i =0; i <nSize ; i ++)	{
+		for (int i = 0; i < nSize; i++) {
 			ScoreVO vo = scoreList.get(i);
 			System.out.println(vo.getNum() + "\t");
 			System.out.println(vo.getName() + "\t");
@@ -99,27 +98,26 @@ public class ScoreServiceImplV2Ex extends ScoreServiceImplV1Ex {
 	@Override
 	public void saveScore() {
 		String fileName = null;
-		while(true) {
+		while (true) {
 			System.out.println("저장할 파일의 이름을 입력하세요");
 			System.out.print(">> ");
-			fileName =scan.nextLine();
-			if(fileName.equals("")) {
+			fileName = scan.nextLine();
+			if (fileName.equals("")) {
 				System.out.println("파일이름은 반드시 입력해야합니다");
 				continue;
 			}
 			break;
 		}
-		String strFileName = "src/com/callor/score"+fileName;
+		String strFileName = "src/com/callor/score" + fileName;
 		FileWriter fileWriter = null;
 		PrintWriter out = null;
-		
+
 		try {
 			fileWriter = new FileWriter(strFileName);
 			out = new PrintWriter(fileWriter);
-			
-			
+
 			int nSize = scoreList.size();
-			for(int i =0 ; i <nSize; i ++) {
+			for (int i = 0; i < nSize; i++) {
 				ScoreVO vo = scoreList.get(i);
 				out.print(vo.getNum() + "\t");
 				out.print(vo.getName() + "\t");
@@ -127,18 +125,16 @@ public class ScoreServiceImplV2Ex extends ScoreServiceImplV1Ex {
 				out.print(vo.getEng() + "\t");
 				out.print(vo.getMath() + "\t");
 				out.print(vo.getTotal() + "\t");
-				out.printf("%3.2f\n",vo.getNum());
+				out.printf("%3.2f\n", vo.getAvg());
 			}
 			out.flush();
 			out.close();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 //			e.printStackTrace();
-			
+
 		}
-		
-		
+
 	}
-	
 
 }

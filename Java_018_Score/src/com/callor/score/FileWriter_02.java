@@ -1,0 +1,52 @@
+package com.callor.score;
+
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+
+public class FileWriter_02 {
+
+	public static void main(String[] args) {
+		String fileName = "src/com/callor/score/test1.txt";
+		FileWriter fileWriter = null;
+		PrintWriter out = null;
+		
+		try {
+			/*
+			 * PrintWriter 클래스 만으도 파일에 데이터를 기록할수 ㅣㅇㅆ다
+			 * 그럼에도 불구하고  FIleWriter를 사용하는 이유는 
+			 * FileWriter생성자의 두번째 파라미터 때문이다 
+			 * new FileWriter(파일이름, bAppend)
+			 * FileWriter객체의 두번째 파라메터를 true로 설정하면 파일을 Append Mode로 open한다
+			 * 
+			 * Append모드
+			 * 
+			 * 두번째 파라메터가 없거나 false로 설정하면 값을 (값을 설정하지 않으면 기본값으로 false이다)
+			 * 1. 기록하고자 하는 파일이 없으면 만들기
+			 * 2. 기록하고자 하는 파일이 있으면 기존파일을 삭제하고 다시만들기
+			 * 3. 항상 새로운 내용만기록
+			 * 
+			 * 두번째 파라미터가 true 이면 
+			 * 1. 기록하고자 하는 파일이 있으면 만들기
+			 * 2. 기록하고자 하는 파일이 있으면
+			 * APPend Mode로 열기
+			 * 3. 새로운 내용을 print() 하면 기존내용의 끝에 계속 이어서 기록한다.
+			 * 
+			 */
+			fileWriter = new FileWriter(fileName,true);
+			out = new PrintWriter(fileWriter);
+			for(int i = 0; i < 10 ; i++) {
+				out.printf("%05d\n", i+1);
+				
+				
+				out.flush();
+				out.close();
+			}
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+
+}

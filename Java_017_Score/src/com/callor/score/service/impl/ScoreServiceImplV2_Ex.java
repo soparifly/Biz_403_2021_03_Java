@@ -1,4 +1,4 @@
-package com.callor.app.service.Impl;
+package com.callor.score.service.impl;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -7,12 +7,11 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-import com.callor.app.model.ScoreVO;
-import com.callor.app.service.Values;
+import com.callor.score.model.ScoreVO;
 import com.kimbyulook.standard.InputService;
 import com.kimbyulook.standard.impl.InputServiceImplV1;
 
-public class ScoreServiceImplV2Ex extends ScoreServiceImplV2 {
+public class ScoreServiceImplV2_Ex extends ScoreServiceImplV2 {
 
 	protected InputService inService;
 	protected String[] subjectList;
@@ -25,7 +24,7 @@ public class ScoreServiceImplV2Ex extends ScoreServiceImplV2 {
 	protected final int 영어 = 1;
 	protected final int 수학 = 2;
 
-	public ScoreServiceImplV2Ex() {
+	public ScoreServiceImplV2_Ex() {
 		scan = new Scanner(System.in);
 		inService = new InputServiceImplV1();
 		scoreList = new ArrayList<ScoreVO>();
@@ -71,13 +70,13 @@ public class ScoreServiceImplV2Ex extends ScoreServiceImplV2 {
 			}
 
 		}
-		ScoreVO scoreVO = new ScoreVO();
+		com.callor.score.model.ScoreVO scoreVO = new ScoreVO();
 		scoreVO.setNum(strNum);
 		scoreVO.setName(strName);
 
-		scoreVO.setKor(subScoreList[Values.국어]);
-		scoreVO.setEng(subScoreList[Values.영어]);
-		scoreVO.setMath(subScoreList[Values.수학]);
+		scoreVO.setKor(subScoreList[국어]);
+		scoreVO.setEng(subScoreList[영어]);
+		scoreVO.setMath(subScoreList[수학]);
 
 		System.out.println("=".repeat(50));
 		System.out.println(scoreVO.toString());
