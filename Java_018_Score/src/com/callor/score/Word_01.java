@@ -18,7 +18,7 @@ public class Word_01 {
 			fileReader = new FileReader(fileName);
 			buffer = new BufferedReader(fileReader);
 
-			String reader;
+			String reader; //문자열 reader초기화
 			while (true) {
 
 				try {
