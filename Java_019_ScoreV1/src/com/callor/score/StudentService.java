@@ -8,6 +8,7 @@ public interface StudentService {
 	public void loadStrudent();
 	public StudentVO getStudent(String num);
 	public void printStudent();
+	public void insertScore();
 	
 	
 }

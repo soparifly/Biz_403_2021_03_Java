@@ -1,4 +1,4 @@
-package com.callor.score;
+package com.callor.score.impl;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -6,7 +6,9 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
+import com.callor.score.StudentService;
 import com.callor.score.model.StudentVO;
 
 public class StudentServiceImplV1 implements StudentService {
@@ -19,9 +21,10 @@ public class StudentServiceImplV1 implements StudentService {
 	protected final int 주소 = 5;
 	protected List<StudentVO> studentList ;
 	public StudentServiceImplV1() {
+		studentList = new ArrayList<StudentVO>();
 		// TODO Auto-generated constructor stub
 		this.loadStrudent();
-		 studentList = new ArrayList<StudentVO>();
+
 	}
 
 	@Override
@@ -45,18 +48,20 @@ public class StudentServiceImplV1 implements StudentService {
 						break;
 
 					String[] student = reader.split(":");
+					StudentVO studentVO = new StudentVO();
+
 					String num = (student[번호]);
 					String name = (student[이름]);
 					String grade = (student[학년]);
 					String dept = (student[학과]);
 					String address = (student[주소]);
 
-					StudentVO studentVO = new StudentVO();
 					studentVO.setNum(num);
 					studentVO.setName(name);
 					studentVO.setGrade(grade);
 					studentVO.setDept(dept);
 					studentVO.setAddress(address);
+					
 					studentList.add(studentVO);
 					buffer.close();
 
@@ -80,7 +85,20 @@ public class StudentServiceImplV1 implements StudentService {
 
 	@Override
 	public StudentVO getStudent(String num) {
-		// TODO Auto-generated method stub
+//		 System.out.println("찾을 학생의 번호를 입력하세요");
+		Scanner scan = new Scanner(System.in);
+		String strNum = num;
+		StudentVO nums = null;
+		System.out.println("찾으려는 숫자입력");
+		System.out.print(" >> ");
+		strNum = scan.nextLine();
+		for (int i = 0; i < studentList.size(); i++) {
+			nums = studentList.get(i);
+			if (nums.equals(strNum)) {
+				return nums;
+			}
+
+		}
 		return null;
 	}
 
@@ -94,6 +112,12 @@ public class StudentServiceImplV1 implements StudentService {
 //			System.out.println(studentList.get(i));
 //			
 //		}
+	}
+
+	@Override
+	public void insertScore() {
+		// TODO Auto-generated method stub
+		
 	}
 
 }
