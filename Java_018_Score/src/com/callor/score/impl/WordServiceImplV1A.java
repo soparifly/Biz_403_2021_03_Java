@@ -62,7 +62,7 @@ public class WordServiceImplV1A implements WordService {
 //					e.printStackTrace();
 				}
 
-			}
+			}//while end
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 //			e.printStackTrace();
