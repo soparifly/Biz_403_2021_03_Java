@@ -42,7 +42,7 @@ public class StudentSerivceImplV1A implements StudentService {
 		// 위생성자에 선언은 의미가 없어서 아래에다가 한다
 		// 클래스를 객체로 생성할때 바로 메서드를 호출하여
 		// 데이터를 사용하도록 준비해달라.
-		this.loadStudent();
+		this.loadScore();
 
 	}
 
@@ -56,7 +56,7 @@ public class StudentSerivceImplV1A implements StudentService {
 	 * student.txt 파일에서 학생정보를 읽어 studnetList에 데이터준비하기
 	 */
 	@Override
-	public void loadStudent() {
+	public void loadScore() {
 
 		FileReader fileReader = null;
 		BufferedReader buffer = null;
@@ -126,7 +126,7 @@ public class StudentSerivceImplV1A implements StudentService {
 	}
 
 	@Override
-	public void printStudent() {
+	public void printScore() {
 		// TODO Auto-generated method stub
 		int nSize = studentList.size();
 		System.out.println("=".repeat(50));
@@ -151,5 +151,7 @@ public class StudentSerivceImplV1A implements StudentService {
 		System.out.println("=".repeat(50));
 
 	}
+
+
 
 }

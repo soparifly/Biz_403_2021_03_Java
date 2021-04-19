@@ -70,7 +70,7 @@ public class ScoreServiceImplV1A implements ScoresService {
 			}
 
 			strNum = String.format("%05d", intNum);
-			ScoreVO scoreVO = this.numCheck(strNum); // 아레의 메서드에서 중복이면 vo를 호출했고 중복이없으면 null값을 호출한다
+			ScoreVO scoreVO = this.numCheck(strNum); // 아래의 메서드에서 중복이면 vo를 호출했고 중복이없으면 null값을 호출한다
 			if (scoreVO != null) {
 				continue; // 브레이크면 더이상 학번을 받지않고 다음 항목으로 넘어간다
 			} //
@@ -79,7 +79,7 @@ public class ScoreServiceImplV1A implements ScoresService {
 			StudentVO stVO = stService.getStudent(strNum);
 			if (stVO == null) {
 				System.out.println("학적부에 없는 학생입니다");
-				System.out.println("학번을 다시입력해주세여");
+				System.out.println("학번을 다시입력해주세요");
 				continue;
 			}
 			System.out.println("=".repeat(50));
@@ -102,12 +102,13 @@ public class ScoreServiceImplV1A implements ScoresService {
 			// 학생정보에 없으면 다시 학번을 입력받고
 			// 있으면 입력하도록 break;
 
-		Integer intKor = null;
-		intKor = inService.inputValue("국어", 0, 100);
+		Integer intKor = inService.inputValue("국어", 0, 100);
 		Integer intEng = inService.inputValue("영어", 0, 100);
 		Integer intMath = inService.inputValue("수학", 0, 100);
 		ScoreVO scoreVO = new ScoreVO();
 		scoreVO.setKor(intKor);
+		scoreVO.setEng(intEng);
+		scoreVO.setMath(intMath);
 
 	}// end inSertScore()
 	/*
