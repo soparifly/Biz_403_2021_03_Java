@@ -11,10 +11,11 @@ import java.util.Random;
 import java.util.Scanner;
 
 import com.callor.word.domain.WordVO;
+import com.callor.word.service.WordService;
 import com.kimbyulook.standard.MenuService;
 import com.kimbyulook.standard.impl.InputServiceImplV1;
 
-public class WordServiceImplV1 {
+public class WordServiceImplV1 implements WordService {
 	/*
 	 * 게임이 시작되면 
 	 * 1.wordList에서 임의 단어를 1개 추출하고 
@@ -50,7 +51,7 @@ public class WordServiceImplV1 {
 		// 가급적 값을 setting하는 코드를 쉽게 발견할수 있도록 하기 위하여 여기에 놓는다
 		nWordCount = wordList.size();
 	}
-	private void inputWord(String[] viewWord) {
+	protected String inputWord(String[] viewWord) {
 
 		System.out.println("=".repeat(50));
 		System.out.println("뤼팡의 영단어 게임 V1");
@@ -63,13 +64,14 @@ public class WordServiceImplV1 {
 		
 		System.out.print(">> ");
 		String strInput = scan.nextLine();
-	}
+		return strInput;
+	}	
 /*
  	* 영문단어를  매개변수로 받아서
  * 알파벳단위로 자르고 
  * 뒤섞어 배열로 만든후 retrun
  */
-	private String[] suffleWord(String strEnglish) {
+	protected String[] suffleWord(String strEnglish) {
 		// 영문 단어를 알파뱃 단위로 잘라서 배열을 생성한다.
 		String suffleEnglish[] = strEnglish.split("");
 
@@ -153,7 +155,7 @@ public class WordServiceImplV1 {
 	return suffleEnglish;
 	}
 
-	private void loadWords(String wordFile) {
+	protected void loadWords(String wordFile) {
 		// TODO Word.txt파일을 읽어 wordList 만들어두기
 		FileReader fileReader = null;
 		BufferedReader buffer = null;
